@@ -1,7 +1,7 @@
 # Router-Simulation
 Created a router simulation in C to demonstrate packet redirection using ARP and ICMP protocols. Enhanced understanding of networking and protocol layering with Ethernet and IP.
 
-# Steps Taken In Implementation
+# Implementation
 
 I wanted to make debugging easier by enabling the use of printf statements when performing ping tests. As a result, the first step was to implement the ARP Request. This involved verifying that the received packet contained an ARP header of type request and processing the header by exchanging the source IP/MAC addresses with the destination addresses, making the destination address the new source. Also updated the header type to "reply" and sent the packet back with the new header. <br>
 
